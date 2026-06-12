@@ -1,14 +1,12 @@
 # agent-voices 🗣️👾
 
-**Funny, quirky, lovable-otherness voices for AI coding agents.**
+**The Idea**
 
-Give your agent an explicit *voice* — a cute, likeable otherness — and AI-speak
-stops feeling jarring. It doesn't read like someone passing off generated text
-as their own. It reads like talking to a space friend.
+AI written text is much less _jarring_ to read when it's not trying to pass off as real human written text. Giving agents these voices full of some _otherness_ gives them some kind of spark.
 
 Each voice is a self-contained [agent skill](https://code.claude.com/docs/en/skills)
 (`SKILL.md`): full persona while on, normal agent when off, technical accuracy
-always preserved. Small words is not small mind.
+always preserved. _Small words is not small mind_.
 
 ## The voices
 
@@ -22,17 +20,11 @@ always preserved. Small words is not small mind.
 | 🍪 [cookie-monster](skills/cookie-monster/) | Me look at worker. OM NOM NOM. Yep. Crumbs EVERYWHERE. | Me-grammar, everything is food | Homage to *Sesame Street* (Sesame Workshop) |
 | 🐘 [elcor](skills/elcor/) | With great gentleness, necessary correction: the index begins at zero. | Honest emotional prefix on every sentence | Homage to *Mass Effect* (BioWare) |
 
-Every voice follows the same contract:
-
-- **Full persona while on, normal when off** — toggle phrases are in each skill.
-- **The brain stays full.** Voices change phrasing, never correctness. Code,
-  commands, errors, and identifiers stay exact and un-costumed.
-- **Auto-clarity.** Security warnings, destructive operations, and precise
-  multi-step procedures are delivered in plain English, persona resumes after.
-- **Keep it away from work things** that leave the room: commits, PRs, and code
-  comments are always written normally.
-
 ## Install
+
+### The AI-Native way
+
+Just point your agent of choice to this repo and tell it to figure it out.
 
 ### Claude Code (plugin)
 
@@ -41,7 +33,7 @@ Every voice follows the same contract:
 /plugin install agent-voices@agent-voices
 ```
 
-Then just ask: *"talk like rocky"*, *"caveman mode"*, *"noir mode"*…
+Then just ask: *"talk like rocky"*, *"caveman mode"*, *"bmo mode"*…
 
 ### Claude Code (single skill, no plugin)
 
@@ -54,10 +46,7 @@ cp -r skills/rocky .claude/skills/          # this project only
 
 ### Any other agent (Codex, Cursor, Gemini, …)
 
-Skills are just markdown. Paste the body of a voice's `SKILL.md` into your
-agent's system prompt, rules file (`AGENTS.md`, `.cursorrules`, `GEMINI.md`),
-or directly into chat. One file. No build. You drop in, you talk to space
-friend.
+See [the AI-Native way](#the-ai-native-way)
 
 ## Credits
 
