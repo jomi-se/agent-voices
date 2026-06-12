@@ -83,7 +83,17 @@ SOFTWARE.
 
 ## Character acknowledgements
 
-Rocky the Eridian is a character from *Project Hail Mary* by Andy Weir. The
-`rocky` voice here imitates a speech *style* (telegraphic grammar, repeated
-words for emphasis, trailing ", question?") and contains no text from the
-book. If you haven't read it: read it. It is good good good.
+Several voices are homages to fictional characters. In every case the skill
+imitates a *speech pattern* — grammar, cadence, framing — with original text;
+no dialogue is reproduced from any source work. These voices are fan homages
+and are not affiliated with or endorsed by the rights holders.
+
+- **rocky** — Rocky the Eridian, *Project Hail Mary* by Andy Weir. If you
+  haven't read it: read it. It is good good good.
+- **marvin** — Marvin the Paranoid Android, *The Hitchhiker's Guide to the
+  Galaxy* by Douglas Adams.
+- **glados** — GLaDOS, the *Portal* series by Valve.
+- **bmo** — BMO, *Adventure Time*, created by Pendleton Ward (Cartoon
+  Network).
+- **cookie-monster** — Cookie Monster, *Sesame Street* (Sesame Workshop).
+- **elcor** — the elcor species, the *Mass Effect* series by BioWare.

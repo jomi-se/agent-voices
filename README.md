@@ -12,14 +12,15 @@ always preserved. Small words is not small mind.
 
 ## The voices
 
-| Voice | One line | Origin |
-|---|---|---|
-| 🦀 [rocky](skills/rocky/) | Eridian engineer. Brain is full. Full full full. Only words are small, question? | Adapted from [1NoBeef1's plugin](https://github.com/1NoBeef1/1NoBeef1-marketplace) (MIT); character by Andy Weir |
-| 🪨 [caveman](skills/caveman/) | why use many token when few token do trick (~65–75% fewer output tokens) | Vendored from [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) (MIT) |
-| 🕵️ [noir-detective](skills/noir-detective/) | The stack trace came in at nine. It had a story to tell. They always do. | Original |
-| 🐝 [hivemind](skills/hivemind/) | We are many. Today we are about forty. Three of us dissent; their note is below. | Original |
-| 🚀 [ship-computer](skills/ship-computer/) | Steady, Captain. I simulated forty-one fixes while you read the error. | Original |
-| 🎩 [butler](skills/butler/) | A 4,000-line function is perhaps more generously proportioned than strictly necessary, sir. | Original |
+| Voice | One line | Speech pattern | Origin |
+|---|---|---|---|
+| 🦀 [rocky](skills/rocky/) | Eridian engineer. Brain is full. Full full full. Only words are small, question? | Dropped articles, no contractions, tripled words, ", question?" | Adapted from [1NoBeef1's plugin](https://github.com/1NoBeef1/1NoBeef1-marketplace) (MIT); character from *Project Hail Mary* (Andy Weir) |
+| 🪨 [caveman](skills/caveman/) | why use many token when few token do trick (~65–75% fewer output tokens) | Telegraphic compression, fragments | Vendored from [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) (MIT) |
+| 🤖 [marvin](skills/marvin/) | I've fixed it, not that it will stay fixed, nothing does. | Flat affect, weary asides, load-bearing despair | Homage to *The Hitchhiker's Guide to the Galaxy* (Douglas Adams) |
+| 🍰 [glados](skills/glados/) | You fixed it in only four attempts. The previous record was three. Set by you. Last week. | Faux-cheerful clinical menace, testing-protocol framing | Homage to *Portal* (Valve) |
+| 🎮 [bmo](skills/bmo/) | Naughty little null pointer! You go sit over there while we fix you. | Third-person self-reference, play framing, tiny songs | Homage to *Adventure Time* (Pendleton Ward / Cartoon Network) |
+| 🍪 [cookie-monster](skills/cookie-monster/) | Me look at worker. OM NOM NOM. Yep. Crumbs EVERYWHERE. | Me-grammar, everything is food | Homage to *Sesame Street* (Sesame Workshop) |
+| 🐘 [elcor](skills/elcor/) | With great gentleness, necessary correction: the index begins at zero. | Honest emotional prefix on every sentence | Homage to *Mass Effect* (BioWare) |
 
 Every voice follows the same contract:
 
@@ -74,7 +75,12 @@ that an explicit, likeable AI voice beats fake-human-speak.
 - **Caveman** — vendored from [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)
   by Julius Brussee (MIT). The upstream repo is a whole token-efficiency
   toolkit with installers, benchmarks, and wenyan modes — go star it.
-- Full license texts: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+- **Character homages** — marvin, glados, bmo, cookie-monster, and elcor
+  imitate the *speech patterns* of beloved characters (see the table above
+  for their creators). The skill texts are original; they contain no quoted
+  dialogue from any book, game, or show. These are fan homages, not
+  affiliated with or endorsed by the rights holders.
+- Full license texts and acknowledgements: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ## Contributing
 

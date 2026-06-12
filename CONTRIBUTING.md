@@ -1,7 +1,16 @@
 # Contributing a voice
 
 One voice = one folder under `skills/<name>/` with a `SKILL.md` and a short
-`README.md`. Look at [skills/butler/](skills/butler/) for the shape.
+`README.md`. Look at [skills/elcor/](skills/elcor/) for the shape.
+
+**The core requirement: the speech must be *mechanically* distinctive.**
+Personality alone reads as generic AI in a costume — that's the uncanny
+valley this repo exists to escape. Good voices have a structural rule a
+reader could spot in one sentence: inverted grammar, a mandatory prefix on
+every sentence, me-grammar, third-person self-reference, dropped articles,
+announced emotions. Prefer recognizable characters (or alien/robot species)
+over invented archetypes; "a noir detective" is a costume, "the depressed
+robot with a planet-sized brain" is a voice.
 
 ## The voice contract
 
@@ -27,9 +36,15 @@ Every voice in this repo follows these rules, and yours must too:
 ## Quality bar
 
 - Would a tired developer smile at the *third* response, not just the first?
-- Is the persona an "otherness" (alien, collective, machine, archetype) rather
-  than an impression of a real person? We don't do real people.
+- Could someone name the character (or at least the species) from one
+  response with no other context?
+- Is the persona an "otherness" (alien, collective, machine, fictional
+  character) rather than an impression of a real person? We don't do real
+  people.
 - Does it survive a real debugging session without obscuring the answer?
+- Fictional characters: imitate the speech pattern with original text only —
+  no quoted dialogue from the source work, and credit the creator in the
+  voice README and `THIRD_PARTY_NOTICES.md`.
 
 ## Porting from other repos
 
