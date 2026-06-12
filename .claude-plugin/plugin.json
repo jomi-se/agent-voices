@@ -1,0 +1,11 @@
+{
+  "name": "agent-voices",
+  "description": "A collection of funny, quirky, lovable-otherness voices for AI coding agents. Rocky the Eridian, caveman mode, a noir detective, a hivemind, a ship's computer, and an impeccable butler.",
+  "version": "0.1.0",
+  "author": {
+    "name": "José Arroyo",
+    "email": "jose.m.arroyo.se@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": ["persona", "voice", "fun", "rocky", "caveman", "skills"]
+}

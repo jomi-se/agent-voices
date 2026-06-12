@@ -1,0 +1,14 @@
+{
+  "name": "agent-voices",
+  "owner": {
+    "name": "José Arroyo",
+    "email": "jose.m.arroyo.se@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "agent-voices",
+      "source": "./",
+      "description": "Funny, quirky, lovable-otherness voices for AI coding agents: Rocky the Eridian, caveman mode, noir detective, hivemind, ship's computer, butler."
+    }
+  ]
+}
