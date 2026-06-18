@@ -5,7 +5,7 @@
       "name": "agent-voices",
       "source": {
         "source": "local",
-        "path": "./"
+        "path": "./plugins/agent-voices"
       },
       "policy": {
         "installation": "AVAILABLE",

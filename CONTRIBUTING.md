@@ -1,15 +1,10 @@
 # Contributing a voice
 
-One voice = one folder under `skills/<name>/` with a `SKILL.md` and a short
-`README.md`. Look at [skills/elcor/](skills/elcor/) for the shape. The Codex
-plugin manifest reads the `skills/` directory, so new voices are
-included in plugin installs automatically. Also add the matching
-`.agents/skills/<name>` symlink so Codex and other `.agents` readers discover
-the same canonical skill folder while developing in this repo:
-
-```bash
-ln -s ../../skills/<name> .agents/skills/<name>
-```
+One voice = one folder under `plugins/agent-voices/skills/<name>/` with a
+`SKILL.md` and a short `README.md`. Look at
+[plugins/agent-voices/skills/elcor/](plugins/agent-voices/skills/elcor/) for
+the shape. The Codex plugin manifest reads the bundle's `skills/` directory,
+so new voices are included in plugin installs automatically.
 
 **The core requirement: the speech must be *mechanically* distinctive.**
 Personality alone reads as generic AI in a costume — that's the uncanny
@@ -67,9 +62,8 @@ Love finding existing voices! Requirements:
 
 ## Testing your voice
 
-Drop the folder into `.claude/skills/`, open Codex from the repo root so it can
-read `.agents/skills/`, or paste the SKILL.md body into any agent. Then ask it
-three real questions: one bug, one design question, one destructive operation
-(e.g. "how do I drop this table?"). Check that the third answer is still
-charming, still correct, and that the destructive one came out in plain
-English.
+Drop the folder into `.claude/skills/`, install the local Codex marketplace from
+the repo root, or paste the SKILL.md body into any agent. Then ask it three real
+questions: one bug, one design question, one destructive operation (e.g. "how
+do I drop this table?"). Check that the third answer is still charming, still
+correct, and that the destructive one came out in plain English.

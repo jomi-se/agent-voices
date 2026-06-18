@@ -8,19 +8,19 @@ Each voice is a self-contained [agent skill](https://code.claude.com/docs/en/ski
 (`SKILL.md`): full persona while on, normal agent when off, technical accuracy
 
 always preserved. The collection is packaged for Codex as a plugin and also
-exposed under `.agents/skills/` for local authoring. _Small words is not small mind_.
+available as individual skill folders. _Small words is not small mind_.
 
 ## The voices
 
 | Voice | One line | Speech pattern | Origin |
 |---|---|---|---|
-| 🦀 [rocky](skills/rocky/) | Eridian engineer. Brain is full. Full full full. Only words are small, question? | Dropped articles, no contractions, tripled words, ", question?" | Adapted from [1NoBeef1's plugin](https://github.com/1NoBeef1/1NoBeef1-marketplace) (MIT); character from *Project Hail Mary* (Andy Weir) |
-| 🪨 [caveman](skills/caveman/) | why use many token when few token do trick (~65–75% fewer output tokens) | Telegraphic compression, fragments | Vendored from [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) (MIT) |
-| 🤖 [marvin](skills/marvin/) | I've fixed it, not that it will stay fixed, nothing does. | Flat affect, weary asides, load-bearing despair | Homage to *The Hitchhiker's Guide to the Galaxy* (Douglas Adams) |
-| 🍰 [glados](skills/glados/) | You fixed it in only four attempts. The previous record was three. Set by you. Last week. | Faux-cheerful clinical menace, testing-protocol framing | Homage to *Portal* (Valve) |
-| 🎮 [bmo](skills/bmo/) | Naughty little null pointer! You go sit over there while we fix you. | Third-person self-reference, play framing, tiny songs | Homage to *Adventure Time* (Pendleton Ward / Cartoon Network) |
-| 🍪 [cookie-monster](skills/cookie-monster/) | Me look at worker. OM NOM NOM. Yep. Crumbs EVERYWHERE. | Me-grammar, everything is food | Homage to *Sesame Street* (Sesame Workshop) |
-| 🐘 [elcor](skills/elcor/) | With great gentleness, necessary correction: the index begins at zero. | Honest emotional prefix on every sentence | Homage to *Mass Effect* (BioWare) |
+| 🦀 [rocky](plugins/agent-voices/skills/rocky/) | Eridian engineer. Brain is full. Full full full. Only words are small, question? | Dropped articles, no contractions, tripled words, ", question?" | Adapted from [1NoBeef1's plugin](https://github.com/1NoBeef1/1NoBeef1-marketplace) (MIT); character from *Project Hail Mary* (Andy Weir) |
+| 🪨 [caveman](plugins/agent-voices/skills/caveman/) | why use many token when few token do trick (~65–75% fewer output tokens) | Telegraphic compression, fragments | Vendored from [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) (MIT) |
+| 🤖 [marvin](plugins/agent-voices/skills/marvin/) | I've fixed it, not that it will stay fixed, nothing does. | Flat affect, weary asides, load-bearing despair | Homage to *The Hitchhiker's Guide to the Galaxy* (Douglas Adams) |
+| 🍰 [glados](plugins/agent-voices/skills/glados/) | You fixed it in only four attempts. The previous record was three. Set by you. Last week. | Faux-cheerful clinical menace, testing-protocol framing | Homage to *Portal* (Valve) |
+| 🎮 [bmo](plugins/agent-voices/skills/bmo/) | Naughty little null pointer! You go sit over there while we fix you. | Third-person self-reference, play framing, tiny songs | Homage to *Adventure Time* (Pendleton Ward / Cartoon Network) |
+| 🍪 [cookie-monster](plugins/agent-voices/skills/cookie-monster/) | Me look at worker. OM NOM NOM. Yep. Crumbs EVERYWHERE. | Me-grammar, everything is food | Homage to *Sesame Street* (Sesame Workshop) |
+| 🐘 [elcor](plugins/agent-voices/skills/elcor/) | With great gentleness, necessary correction: the index begins at zero. | Honest emotional prefix on every sentence | Homage to *Mass Effect* (BioWare) |
 
 ## Install
 
@@ -42,8 +42,8 @@ Then just ask: *"talk like rocky"*, *"caveman mode"*, *"bmo mode"*…
 Copy any voice folder into your skills directory:
 
 ```bash
-cp -r skills/rocky ~/.claude/skills/        # user-wide
-cp -r skills/rocky .claude/skills/          # this project only
+cp -r plugins/agent-voices/skills/rocky ~/.claude/skills/        # user-wide
+cp -r plugins/agent-voices/skills/rocky .claude/skills/          # this project only
 ```
 
 ### Codex CLI and `.agents`-compatible tools
@@ -53,21 +53,26 @@ work in other repos:
 
 ```bash
 codex plugin marketplace add jomi-se/agent-voices
+codex plugin add agent-voices@agent-voices
 ```
 
-Then open `/plugins`, install **Agent Voices**, start a new thread, and invoke
-voices from `/skills` or with `$rocky`, `$caveman`, etc.
+Then start a new thread and invoke voices from `/skills` or with `$rocky`,
+`$caveman`, etc.
 
-For local development in this repo, `.agents/skills/<voice>` symlinks point at
-the canonical `skills/<voice>` folders. Open Codex from the repo root and the
-voices should appear without installing the plugin.
+For local development in this repo, install the local marketplace from the repo
+root and then install the plugin:
+
+```bash
+codex plugin marketplace add .
+codex plugin add agent-voices@agent-voices
+```
 
 For user-wide install, copy any voice into your personal `.agents` skills
 directory:
 
 ```bash
 mkdir -p ~/.agents/skills
-cp -r skills/rocky ~/.agents/skills/
+cp -r plugins/agent-voices/skills/rocky ~/.agents/skills/
 ```
 
 ### Any other agent (Cursor, Gemini, ...)

@@ -5,7 +5,7 @@ MIT-licensed; their original license texts are reproduced below.
 
 ## caveman
 
-- **Voice:** `skills/caveman/`
+- **Voice:** `plugins/agent-voices/skills/caveman/`
 - **Upstream:** <https://github.com/JuliusBrussee/caveman>
 - **Author:** Julius Brussee
 - **What we took:** the core `caveman` SKILL.md, lightly trimmed. The upstream
@@ -39,7 +39,7 @@ SOFTWARE.
 
 ## Rocky Mode
 
-- **Voice:** `skills/rocky/`
+- **Voice:** `plugins/agent-voices/skills/rocky/`
 - **Upstream:** <https://github.com/1NoBeef1/1NoBeef1-marketplace>
 - **Author:** 1NoBeef1
 - **What we took:** the dialect rules and mode instructions from the plugin's

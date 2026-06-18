@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "agent-voices",
-      "source": "./",
+      "source": "./plugins/agent-voices",
       "description": "Agent voices for AI coding agents: rocky, caveman, marvin, glados, bmo, cookie-monster, and elcor."
     }
   ]
