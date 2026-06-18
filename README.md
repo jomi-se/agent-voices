@@ -1,4 +1,4 @@
-# agent-voices 🗣️👾
+# Agent voices
 
 **The Idea**
 
