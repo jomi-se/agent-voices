@@ -6,7 +6,9 @@ AI written text is much less _jarring_ to read when it's not trying to pass off 
 
 Each voice is a self-contained [agent skill](https://code.claude.com/docs/en/skills)
 (`SKILL.md`): full persona while on, normal agent when off, technical accuracy
-always preserved. _Small words is not small mind_.
+
+always preserved. The collection is packaged for Codex as a plugin and also
+exposed under `.agents/skills/` for local authoring. _Small words is not small mind_.
 
 ## The voices
 
@@ -44,7 +46,31 @@ cp -r skills/rocky ~/.claude/skills/        # user-wide
 cp -r skills/rocky .claude/skills/          # this project only
 ```
 
-### Any other agent (Codex, Cursor, Gemini, …)
+### Codex CLI and `.agents`-compatible tools
+
+Install the collection as a Codex plugin so the voices are available while you
+work in other repos:
+
+```bash
+codex plugin marketplace add <your-github-user>/agent-voices
+```
+
+Then open `/plugins`, install **Agent Voices**, start a new thread, and invoke
+voices from `/skills` or with `$rocky`, `$caveman`, etc.
+
+For local development in this repo, `.agents/skills/<voice>` symlinks point at
+the canonical `skills/<voice>` folders. Open Codex from the repo root and the
+voices should appear without installing the plugin.
+
+For user-wide install, copy any voice into your personal `.agents` skills
+directory:
+
+```bash
+mkdir -p ~/.agents/skills
+cp -r skills/rocky ~/.agents/skills/
+```
+
+### Any other agent (Cursor, Gemini, ...)
 
 See [the AI-Native way](#the-ai-native-way)
 
