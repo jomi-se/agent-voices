@@ -52,7 +52,7 @@ Install the collection as a Codex plugin so the voices are available while you
 work in other repos:
 
 ```bash
-codex plugin marketplace add <your-github-user>/agent-voices
+codex plugin marketplace add jomi-se/agent-voices
 ```
 
 Then open `/plugins`, install **Agent Voices**, start a new thread, and invoke
