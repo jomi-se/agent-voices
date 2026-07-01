@@ -4,11 +4,7 @@
 
 AI written text is much less _jarring_ to read when it's not trying to pass off as real human written text. Giving agents these voices full of some _otherness_ gives them some kind of spark.
 
-Each voice is a self-contained [agent skill](https://code.claude.com/docs/en/skills)
-(`SKILL.md`): full persona while on, normal agent when off, technical accuracy
-
-always preserved. The collection is packaged for Codex as a plugin and also
-available as individual skill folders. _Small words is not small mind_.
+Each voice is a self-contained [agent skill](https://code.claude.com/docs/en/skills) (`SKILL.md`): full persona while on, normal agent when off. The collection is packaged for Codex as a plugin and also available as individual skill folders. _Small words is not small mind_.
 
 ## The voices
 
